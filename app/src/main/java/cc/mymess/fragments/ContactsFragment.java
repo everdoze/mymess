@@ -1,6 +1,8 @@
 package cc.mymess.fragments;
 
+import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+import android.support.annotation.CallSuper;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -19,6 +21,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import cc.mymess.R;
+import cc.mymess.activities.MainActivity;
 import cc.mymess.utils.DrawerMenuItem;
 import cc.mymess.utils.LazyAdapter;
 import cc.mymess.utils.XMLParser;
@@ -62,6 +65,12 @@ public class ContactsFragment extends Fragment {
         return inflater.inflate(R.layout.content_contacts, container, false);
     }
 
+    @Override
+    public void onStop(){
+        super.onStop();
+        MainActivity main = (MainActivity) getActivity();
+        main.clearState();
+    }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState){
