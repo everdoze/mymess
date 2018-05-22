@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contacts>
+    <contact>
+    <nickname>test1</nickname>
+    <contName>Test One</contName>
+    <image>https://api.androidhive.info/music/images/adele.png</image>
+    </contact>
+    <contact>
+        <nickname>test2</nickname>
+        <contName>Test Two</contName>
+        <image>https://api.androidhive.info/music/images/eminem.png</image>
+    </contact>
+    <contact>
+        <nickname>test3</nickname>
+        <contName>Test Three</contName>
+        <image>https://api.androidhive.info/music/images/mj.png</image>
+    </contact>
+    <contact>
+        <nickname>test4</nickname>
+        <contName>Test Four</contName>
+        <image>https://api.androidhive.info/music/images/rihanna.png</image>
+    </contact>
+    <contact>
+        <nickname>test5</nickname>
+        <contName>Test Five</contName>
+        <image>https://api.androidhive.info/music/images/arrehman.png</image>
+    </contact>
+</contacts>
