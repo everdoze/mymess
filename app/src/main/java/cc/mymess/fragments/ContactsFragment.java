@@ -1,5 +1,6 @@
 package cc.mymess.fragments;
 
+import android.app.LauncherActivity;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.support.annotation.CallSuper;
@@ -10,6 +11,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
@@ -62,7 +65,7 @@ public class ContactsFragment extends Fragment {
 
         xml = getArguments().getString("contacts");
 
-        return inflater.inflate(R.layout.content_contacts, container, false);
+        return inflater.inflate(R.layout.contact_activity, container, false);
     }
 
     @Override
@@ -106,7 +109,8 @@ public class ContactsFragment extends Fragment {
                     @Override
                     public void onItemClick(AdapterView<?> parent, View view,
                                             int position, long id) {
-
+                        Animation anim = AnimationUtils.loadAnimation(getActivity(),R.anim.list_item_click);
+                        view.startAnimation(anim);
                     }
                 });
             }

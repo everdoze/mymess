@@ -9,6 +9,8 @@
     </style>
 
     <style name="AppTheme.NoTitleBar" parent="AppTheme">
+        <item name="android:windowDisablePreview">true</item>
+        <!-- <item name="android:windowBackground">@drawable/slash_screen</item> -->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

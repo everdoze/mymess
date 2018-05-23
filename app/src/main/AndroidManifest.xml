@@ -22,6 +22,18 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".activities.Contacts"
+            android:label="@string/contacts"
+            android:theme="@style/AppTheme.NoTitleBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
